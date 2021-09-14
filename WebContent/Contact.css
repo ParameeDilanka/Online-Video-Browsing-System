@@ -1,0 +1,81 @@
+@CHARSET "ISO-8859-1";
+
+h1 {
+    color: purple;
+    margin-left: 40px;
+}
+h2{
+	color: black;   
+} 
+.inpt{
+	width: 380px;
+	height:25px;
+}
+.add-button {
+    background-color: orange;
+    color: black;
+    width: 100%;
+    padding: 8px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.reset-button {
+    background-color: #ffff00; /* yello */
+    color: black;
+    width: 100%;
+    padding: 8px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.list-button {
+    background-color:  #00FF00; /* green */
+    color: black;
+    width: 100%;
+    padding: 8px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width:450px;
+}
+
+.delete-button {
+    background-color: #FF0000; /* red */
+    color: black;
+    width: 100%;
+    padding: 8px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.update-button {
+    background-color: #00FF00; /* green */
+    color: black;
+    width: 100%;
+    padding: 8px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.select-button {
+    background-color: #00FF00;
+    color: black;
+    width: 100%;
+    padding: 8px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+

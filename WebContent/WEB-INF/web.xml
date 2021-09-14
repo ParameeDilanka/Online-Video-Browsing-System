@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>OOP Employee Web App</display-name>
+ 
+  <servlet>
+    <servlet-name>AddContactServlet</servlet-name>
+    <servlet-class>com.oop.servlet.AddContactServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateContactServlet</servlet-name>
+    <servlet-class>com.oop.servlet.UpdateContactServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteContactServlet</servlet-name>
+    <servlet-class>com.oop.servlet.DeleteContactServlet</servlet-class>
+  </servlet>
+   
+  <servlet>
+    <servlet-name>GetContactServlet</servlet-name>
+    <servlet-class>com.oop.servlet.GetContactServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListContactServlet</servlet-name>
+    <servlet-class>com.oop.servlet.ListContactServlet</servlet-class>
+  </servlet>
+ <servlet-mapping>
+    <servlet-name>AddContactServlet</servlet-name>
+    <url-pattern>/AddContactServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateContactServlet</servlet-name>
+    <url-pattern>/UpdateContactServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteContactServlet</servlet-name>
+    <url-pattern>/DeleteContactServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetContactServlet</servlet-name>
+    <url-pattern>/GetContactServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ListContactServlet</servlet-name>
+    <url-pattern>/ListContactServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+     <welcome-file>inde.jsp</welcome-file>
+    <welcome-file>homeView.html</welcome-file>
+    <welcome-file>homeView.htm</welcome-file>
+    <welcome-file>homeView.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>search.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

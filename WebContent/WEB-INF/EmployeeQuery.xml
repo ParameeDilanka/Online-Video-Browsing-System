@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- by Udara Samaratunge Department of Software Engineering OOP 
+	SQL queries -->
+<Querys>
+
+	<!-- Create table employee Query -->
+	<query id="create_employee_table">
+        <![CDATA[
+            CREATE TABLE employee(
+				userID varchar(10) not null,
+				Name varchar(20) ,
+				email varchar(50),
+				phone varchar(10) ,
+				address varchar(50),
+				subject  varchar(200),
+				message varchar(1000),
+		
+				primary key (userID)
+			)
+        ]]>
+	</query>
+
+	<!-- DROP TABLE EMPLOYEES Query -->
+	<query id="drop_table">
+         <![CDATA[        
+            DROP TABLE IF EXISTS employee 
+        ]]>
+	</query>
+
+	<!-- Select all customer orders Query -->
+	<query id="insert_contact">
+        <![CDATA[
+          	insert into employee (userID, Name, email, phone, address, subject, message) 
+          	values (?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular employee by id Query -->
+	<query id="contact_by_id">
+         <![CDATA[        
+            select * from employee where employee.userID = ?
+        ]]>
+	</query>
+
+	<!-- Select all employees -->
+	<query id="all_contacts">
+         <![CDATA[        
+            select * from employee
+        ]]>
+	</query>
+
+	<!-- Delete a particular employee by id Query -->
+	<query id="remove_contact">
+         <![CDATA[        
+            delete from employee where employee.userID = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular employee by id Query -->
+	<query id="update_contact">
+         <![CDATA[        
+            update employee as e 
+            set e.Name = ?, e.email = ?, e.phone = ?, e.address = ?,  e.subject = ?, e.message = ? 
+            where e.userID = ?
+        ]]>
+	</query>
+	
+		<!-- Get employee IDs Query -->
+	<query id="contact_ids">
+         <![CDATA[        
+            select e.userID from employee as e
+        ]]>
+	</query>
+
+</Querys>
